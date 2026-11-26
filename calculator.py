@@ -1,7 +1,23 @@
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+while True:
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
 
-print("Addition:", num1 + num2)
-print("Subtraction:", num1 - num2)
-print("Multiplication:", num1 * num2)
-print("Division:", num1 / num2)
+    choice = input("Enter choice: ")
+
+    if choice == "5":
+        break
+
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    if choice == "1":
+        print(a + b)
+    elif choice == "2":
+        print(a - b)
+    elif choice == "3":
+        print(a * b)
+    elif choice == "4":
+        print(a / b)
